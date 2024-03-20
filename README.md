@@ -21,9 +21,9 @@ This repository contains C++ code for implementing a Redis queue, comprising a q
    - Navigate to the root directory of the repository.
    - Compile the code using a C++ compiler, linking against Boost Libraries. For example:
      ```
-     g++ -std=c++11 queue-pusher.cpp -lboost_system -o queue-pusher
-     g++ -std=c++11 queue-consumer.cpp -lboost_system -lboost_redis -o queue-consumer
-     g++ -std=c++11 redis-test.cpp -lgtest -lgmock -lboost_system -o redis-test
+     g++ -o queue-pusher queue-pusher.cpp -I /usr/include/boost/ -lpthread -lcrypto -lssl
+     g++ -o queue-consumer queue-consumer.cpp -I /usr/include/boost/ -lpthread -lcrypto -lssl
+     g++ -o redis-test redis-test.cpp  -I /usr/include/boost/ -lgtest -lgtest_main -lgmock -lpthread
      ```
 
 #### Usage Guide:
