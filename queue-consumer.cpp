@@ -16,7 +16,7 @@ auto main(int argc, char * argv[])-> int
 
         if(argc < 4)
         {
-            std::string errorMsg = "Incorrect Usage. Usage: ./redis-pusher.cpp [HOST] [PORT] [Name of Queue] [optional: Number of Elements to Pop]";
+            std::string errorMsg = "Incorrect Usage. Usage: ./queue-consumer [HOST] [PORT] [Name of Queue] [optional: Number of Elements to Pop]";
             throw std::invalid_argument(errorMsg);
         } 
  
