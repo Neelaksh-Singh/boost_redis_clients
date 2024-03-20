@@ -1,4 +1,4 @@
-### Repository: Redis Queue Implementation
+# Boost Redis Queue Implementation
 
 This repository contains C++ code for implementing a Redis queue, comprising a queue pusher, a queue consumer, and tests.
 
